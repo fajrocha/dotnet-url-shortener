@@ -1,0 +1,6 @@
+@DotnetUrlShortener.API_HostAddress = http://localhost:5153
+
+GET {{DotnetUrlShortener.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
