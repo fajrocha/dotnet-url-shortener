@@ -15,7 +15,7 @@ permissions:
 jobs:
   deploy-prd:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     environment: Production
     steps:
       - uses: actions/checkout@v4
