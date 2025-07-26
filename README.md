@@ -45,6 +45,8 @@ az ad sp create-for-rbac --name "GitHub-Actions-SP" `
 
 ### Get Azure Publish Profile
 
+`SCM Basic Auth Publishing Credentials` must be enabled.
+
 ```bash
 az webapp deployment list-publishing-profiles --name api-wyk632carl7cu --resource-group appdev-rg-prd-we-dotnet-urlshortener --xml
 ```
