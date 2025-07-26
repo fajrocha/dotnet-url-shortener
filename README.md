@@ -42,3 +42,9 @@ az ad sp create-for-rbac --name "GitHub-Actions-SP" `
                          --scopes /subscriptions/86c784c6-6555-4bac-8d1e-a7295191bef7 `
                          --sdk-auth
 ```
+
+### Get Azure Publish Profile
+
+```bash
+az webapp deployment list-publishing-profiles --name api-wyk632carl7cu --resource-group appdev-rg-prd-we-dotnet-urlshortener --xml
+```
